@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #ececec;
+}
+
+.logo {
+    max-width: 15rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+
+.foto {
+    margin-top: 30px;
+    text-align: center;
+    
+ }
+ .foto img {
+     width: 400px;
+     height: 400px;
+     border-radius: 250px;
+     margin-left: 6px;
+     
+ }
+ h1 {
+     text-align: center;
+     font-size: 48px;
+     margin-top:20px;
+ }
+ h3 {
+     margin: 0;
+     text-align: center;
+     font-size: 32px;
+     height: 50px;
+ }
+ p {
+     text-align: center;
+     line-height: 25px;
+     margin-left:5px;
+     margin-right: 5px;
+     padding: 5px;
+ }
+ p, h1, h3, {
+     line-height: 1.2;
+ }
+ .enlace-cv {
+     margin:0 auto;
+     font-size: 20px;
+     width:25%;
+     background-color:rgb(0, 187, 255);
+     border-radius: 40px;
+     padding: 15px 25px;
+     text-align: center;
+     display:flex;
+     justify-content: center;
+ }
+ .enlace-cv:hover{
+     background-color:greenyellow;
+ }
+ .enlace-cv a {   
+     color: #fbfbfb;
+     text-decoration: none;
+ }
+ .contacto {
+     background-color: rgba(89, 142, 175, 0.3);
+     border-right: 10px;
+     border-radius: 10px;
+     height: 400px;
+     color: #0f0f0f;
+     margin-top: 300px;
+     padding: 80px;
+     margin: 80px;
+ }
+  
+    .redes-sociales {
+     display: flex;
+     justify-content:center;
+     margin:0 auto;
+ }
+    .redes-sociales a {
+     padding: 30px 30px;
+     margin-bottom: 70px;
+ }
+    .redes-sociales a img {
+     max-width: 60px;
+     max-height: 60px;
+     text-align: center;
+}
+
+    .redes-sociales a img:hover {
+        background-color: greenyellow;
+    }
+
+    .footer {
+     color: #fbfbfb;
+     background:#597daf;
+     display:flex;
+     justify-content: center;
+     padding:20px;
+     height: 120px;
+ }
+    .carrousel {
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    overflow: hidden;
+  }
+  
+  .carrousel .grande {
+    width: 200%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    padding: 2em;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+  }
+  
+  .carrousel .img {
+    width: calc( 100% / 2 - 2em);
+    min-height: 10vh;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+  
+  .carrousel .puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carrousel .punto {
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+  
+  .carrousel .punto.activo {
+    background-color: lightblue;
+  }
+   
+
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: blue;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+    .logo {
+        max-width: 8rem;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 1rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, -0.5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+    .foto img {
+        width: 200px;
+        height: 200px;
+        border-radius: 250px;
+        margin-left: 6px;
+    }
+    h1{
+        font-size: 32px;
+    }
+    h3{
+        font-size: 28px;
+    }
+    .enlace-cv{
+        font-size:16px;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    .contacto {
+        background-color: rgba(89, 142, 175, 0.3);
+        border-right: 10px;
+        border-radius: 10px;
+        height: 300px;
+        color: #0f0f0f;
+        margin-top: 300px;
+        padding: 8px;
+        margin: 8px;
+    }
+    .redes-sociales a img {
+        max-width: 30px;
+        max-height: 30px;
+}
+
