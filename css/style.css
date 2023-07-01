@@ -241,6 +241,15 @@ h3 {
   transition: 0.3s;
   list-style-type: none;
 }
+.textoblanco{
+  color: #597daf;
+}
+.textoblanco:hover{
+  color: #1c1c1c;
+}
+.textoblanco:visited{
+  color: #597daf;
+}
 /*Estilos para tables y dispositovo mobiles en horizontal*/
 @media screen and (min-width: 480px) {
   .redes-sociales a img {
