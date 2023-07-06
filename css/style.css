@@ -146,8 +146,8 @@ h3 {
 .images img {
   margin-top: 30px;
   text-align: center;
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height:  5rem;
   border-radius: 250px;
   margin-left: 6px;
 }
@@ -249,6 +249,9 @@ h3 {
 }
 .textoblanco:visited{
   color: #597daf;
+}
+.fa-4xx{
+  font-size: 2rem;
 }
 /*Estilos para tables y dispositovo mobiles en horizontal*/
 @media screen and (min-width: 480px) {
@@ -355,6 +358,13 @@ h3 {
     display: flex;
     justify-content: center;
   }
+  .images img {    
+    width: 6.5rem;
+    height:  6.5rem;    
+  }
+  .fa-4xx{
+    font-size: 4rem;
+  }
 }
 /*Esitlos para pantallas grandes*/
 @media screen and (min-width: 950px) {
@@ -386,12 +396,8 @@ h3 {
     justify-content: center;
   }
 
-  .images img {
-    margin-top: 30px;
-    text-align: center;
-    width: 300px;
-    height: 300px;
-    border-radius: 250px;
-    margin-left: 6px;
+  .images img {    
+    width: 8rem;
+    height:  8rem;    
   }
 }
